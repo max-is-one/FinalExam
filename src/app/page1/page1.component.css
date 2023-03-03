@@ -1,0 +1,180 @@
+*
+{
+    margin: 0; padding: 0;
+}
+
+.main
+{
+    width: 100%; height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.lside
+{
+    width: 25%;
+    background-image: url(../../assets/Images/Page1/Left.png);  
+    background-position: center;
+    background-size: cover;
+}
+
+.rside
+{
+    width: 25%;
+    background-image: url(../../assets/Images/Page1/Right.png); 
+    background-position: center; 
+    background-size: cover;
+}
+
+.mainBlock
+{
+    width: 50%;
+    background-image: url(../../assets/Images/Page1/Design.png);   
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.textBlock
+{
+    position: absolute;
+    width: 71%; height: 70%;
+    left: 15%; top: 15%;
+    display: flex;
+}
+
+.elipse
+{
+    position: absolute;
+    width: 71%; height: 70%;
+    left: 15%; top: 15%;
+    background-image: url(../../assets/Images/Page1/Elipse.png);  
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    animation-duration: 3s;
+    animation-name: rotation;
+}
+
+.mainText
+{
+    color: white;
+    font-size: calc(var(--screenIndex)* 5);
+    font-weight: 600;
+    position: relative;
+    top: 35%;
+    margin-right: 13.6%;
+}
+
+.tl
+{
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.3,2,.23,1.03);
+    animation-name: slideR;
+}
+
+.tr
+{
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.3,2,0.23,1.03);
+    animation-name: slideL;
+}
+
+.invite
+{
+    position: absolute;
+    top: 5%; right: 5%;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(.23,.93,.76,.99);
+    animation-name: t1;
+}
+
+.site
+{
+    position: absolute;
+    bottom: 5%; left: 5%;
+    animation-duration: 3s;   
+    animation-timing-function: cubic-bezier(.23,.93,.76,.99);
+    animation-name: t2;
+}
+
+h4
+{
+    color: white;
+    font-size: calc(var(--screenIndex) * 0.6);
+    text-align: right;
+}
+
+.whiteBlur
+{
+    width: 100%; height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes slideR
+{
+    from 
+    {
+        left: -40%;
+    }
+    to 
+    {
+        left: 0%;
+    }
+}
+
+@keyframes slideL
+{
+    from 
+    {
+        right: -40%;
+    }
+    to 
+    {
+        right: 0%;
+    }
+}
+
+@keyframes rotation
+{
+    0%
+    {
+        transform: rotate(-25deg);
+    }
+    25%
+    {
+        transform: rotate(20deg);
+    }
+    50%
+    {
+        transform: rotate(-15deg);
+    }
+    75%
+    {
+        transform: rotate(10deg);
+    }
+}
+
+@keyframes t1
+{
+    from
+    {
+        right: 70%;
+    }
+    to 
+    {
+        right: 5%;
+    }
+}
+
+@keyframes t2
+{
+    from
+    {
+        left: 80%;
+    }
+    to 
+    {
+        left: 5%;
+    }
+}

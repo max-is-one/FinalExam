@@ -1,0 +1,245 @@
+*
+{
+    margin: 0; padding: 0;
+}
+
+.main
+{
+    width: 100%; height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.lside
+{
+    width: 25%;
+    background-image: url(../../assets/Images/Page5/Left.png);  
+    background-position: center;
+    background-size: cover;
+}
+
+.rside
+{
+    width: 25%;
+    background-image: url(../../assets/Images/Page5/Right.png); 
+    background-position: center; 
+    background-size: cover;
+}
+
+.mainBlock
+{
+    width: 50%;
+    background-image: url(../../assets/Images/Page5/Design.png);   
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.info
+{
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+}
+
+.site
+{
+    position: relative;
+    width: 100%;
+    height: 18%;
+    animation: slideL 3s cubic-bezier(.23,.93,.76,.99);
+}
+
+h4
+{
+    font-size: calc(var(--screenIndex) * 0.6);
+    margin-top: 15%;
+}
+
+h1
+{
+    font-family: monospace;
+    overflow: hidden;
+    width: 9ch;
+    font-size: calc(var(--screenIndex) * 1.7);
+    margin-bottom: 5%;
+    border-right: 4px solid transparent;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+.th1
+{
+    width: 9ch;
+    animation: flashing-border 0.75s step-end 3, printed-text 2s steps(9);
+    animation-fill-mode: forwards;
+}
+
+.th2
+{
+    width: 6ch;
+    animation: flashing-border 0.75s step-end 3, printed-text 2s steps(6);
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+}
+
+.th3
+{
+    width: 8ch;
+    animation: flashing-border 0.75s step-end 3, printed-text 2s steps(8);
+    animation-delay: 4.4s;
+    animation-fill-mode: forwards;
+}
+
+.th4
+{
+    width: 8ch;
+    animation: flashing-border 0.75s step-end 3, printed-text 2s steps(8);
+    animation-delay: 6.6s;
+    animation-fill-mode: forwards;
+}
+
+.th5
+{
+    width: 9ch;
+    animation: flashing-border 0.75s step-end 3, printed-text 2s steps(9);
+    animation-delay: 8.8s;
+    animation-fill-mode: forwards;
+}
+
+.th6
+{
+    width: 6ch;
+    animation: flashing-border 0.75s step-end 3, printed-text 2s steps(6);
+    animation-delay: 11s;
+    animation-fill-mode: forwards;
+}
+
+.th7
+{
+    width: 6ch;
+    animation: flashing-border 0.75s step-end 3, printed-text 2s steps(6);
+    animation-delay: 13s;
+    animation-fill-mode: forwards;
+}
+
+.text
+{
+    width: 100%;
+    height: 60%;
+}
+
+.logo
+{
+    width: 28%;
+    height: 11%;
+    margin-top: 8%;
+    background-image: url(../../assets/Images/Page5/Logo.png);   
+    background-position: center;
+    background-size: cover;
+}
+
+.elipses
+{
+    display: flex;
+    width: 27%;
+    flex-direction: column;
+}
+
+.elipse
+{
+    margin: 11% 0;
+    width: 100%; height: 27%;    
+}
+
+.l1
+{
+    width: 100%; height: 100%;
+    background-image: url(../../assets/Images/Page5/Elipse.png);  
+    background-position: center;
+    background-size: cover;
+    animation: grow-up 2s ease;
+}
+
+.textBlock
+{
+    width: 30%;
+}
+
+.date
+{
+    font-size: calc(var(--screenIndex) * 0.7);
+    width: 200%;
+    letter-spacing: 1.5vh;
+    transform: rotate(90deg);
+    position: relative;
+    top: 50%;
+    left: -50%;
+    white-space: nowrap;
+    animation: slideB 3s cubic-bezier(.23,.93,.76,.99);
+}
+
+.whiteBlur
+{
+    width: 100%; height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes flashing-border
+{
+    0%
+    {
+        border-color: white;
+    }
+    50%
+    {
+        border-color: transparent;
+    }
+}
+
+@keyframes printed-text
+{
+    0%
+    {
+        opacity: 1;
+        width: 0;
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes slideL 
+{
+    0%
+    {
+        left: 50%;
+    }
+    100%
+    {
+        left: 0%;
+    }
+}
+
+@keyframes slideB
+{
+    0%
+    {
+        top: 33%;
+    }
+}
+
+@keyframes grow-up
+{
+    0%
+    {
+        height: 70%; width: 70%;
+        margin: 15%;
+    }
+}

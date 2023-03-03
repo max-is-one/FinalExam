@@ -1,0 +1,140 @@
+*
+{
+    margin: 0; padding: 0;
+}
+
+.main
+{
+    width: 100%; height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.lside
+{
+    width: 25%;
+    background-image: url(../../assets/Images/Page4/Left.png);  
+    background-position: center;
+    background-size: cover;
+}
+
+.rside
+{
+    width: 25%;
+    background-image: url(../../assets/Images/Page4/Right.png); 
+    background-position: center; 
+    background-size: cover;
+}
+
+.mainBlock
+{
+    width: 50%;
+    background-image: url(../../assets/Images/Page4/Design.png);   
+    background-position: center;
+    background-size: cover;
+}
+
+.elipse
+{  
+    position: relative;
+    width: 60%; height: 70%;
+    top: 15%;
+    background-image: url(../../assets/Images/Page4/Elipse.png);  
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    animation: rotating  2s;
+}
+
+.logo
+{
+    position: relative;
+    top: 45%; left: 35%;
+    width: calc(var(--screenIndex)*6); height: calc(var(--screenIndex)*6);
+    background-image: url(../../assets/Images/Page4/Logo.png);  
+    background-position: center;
+    background-size: cover;
+    animation: rotatingR  2s;
+}
+
+.textBlock
+{
+    width: 20%;
+    height: 100%;
+}
+
+.date
+{
+    color: white;
+    font-size: calc(var(--screenIndex) * 0.7);
+    width: 200%;
+    letter-spacing: 2vh;
+    position: relative;
+    white-space: nowrap;
+    animation: slideB 3s cubic-bezier(.23,.93,.76,.99);
+    z-index: 11;
+}
+
+.d1
+{
+    transform: rotate(-90deg);
+    top: 75%;
+    left: -50%;
+    animation: slideT  2s;
+    animation-fill-mode: forwards;
+}
+
+.d2
+{
+    transform: rotate(90deg);
+    top: 22%;
+    left: -50%;
+    animation: slideB  2s;
+    animation-fill-mode: forwards;
+}
+
+.blackBlur
+{
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.15);
+    display: flex;
+    position: relative;
+}
+
+.whiteBlur
+{
+    width: 100%; height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+@keyframes slideT 
+{
+    to 
+    {
+        top: 62%;
+    }
+}
+
+@keyframes slideB 
+{
+    to 
+    {
+        top: 33%;
+    }
+}
+
+@keyframes rotating
+{
+    0%
+    {
+        transform: rotate(-20deg);
+    }
+}
+
+@keyframes rotatingR
+{
+    0%
+    {
+        transform: rotate(-30deg);
+    }
+}

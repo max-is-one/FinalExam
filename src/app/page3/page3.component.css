@@ -1,0 +1,206 @@
+*
+{
+    margin: 0; padding: 0;
+}
+
+.main
+{
+    width: 100%; height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.lside
+{
+    width: 25%;
+    background-image: url(../../assets/Images/Page3/Left.png);  
+    background-position: center;
+    background-size: cover;
+}
+
+.rside
+{
+    width: 25%;
+    background-image: url(../../assets/Images/Page3/Right.png); 
+    background-position: center; 
+    background-size: cover;
+}
+
+.mainBlock
+{
+    width: 50%;
+    background-image: url(../../assets/Images/Page3/Design.png);   
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.elipse
+{
+    position: absolute;
+    width: 66%; height: 65%;
+    left: 17.5%; top: 17.5%;
+    background-image: url(../../assets/Images/Page3/Elipse.png);  
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    z-index: 9;
+}
+
+.logo1
+{
+    width: 10%; height: 10%;
+    position: absolute;
+    background-image: url(../../assets/Images/Page3/Logos/Logo2.png);  
+    background-position: center;
+    background-size: cover;
+    top: 5%; left: 5%;
+    animation: shaking 3s;
+}
+
+.logo2
+{
+    width: 10%; height: 10%;
+    position: absolute;
+    background-image: url(../../assets/Images/Page3/Logos/Logo2.png);  
+    background-position: center;
+    background-size: cover;
+    top: 5%; right: 5%;
+    animation: shaking 3s;
+}
+
+.logo3
+{
+    width: 10%; height: 10%;
+    position: absolute;
+    background-image: url(../../assets/Images/Page3/Logos/Logo2.png);  
+    background-position: center;
+    background-size: cover;
+    bottom: 5%; left: 5%;
+    animation: shaking 3s;
+}
+
+.logo4
+{
+    width: 10%; height: 10%;
+    position: absolute;
+    background-image: url(../../assets/Images/Page3/Logos/Logo2.png);  
+    background-position: center;
+    background-size: cover;
+    bottom: 5%; right: 5%;
+    animation: shaking 3s;
+}
+
+.mainText
+{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: calc(var(--screenIndex)* 5);
+    font-weight: 700;
+    position: relative;
+    top: 35%; left: -20%;
+    margin-right: 11%;
+}
+
+.t1
+{
+    top: -5%;
+    animation: t1 2s;
+    animation-fill-mode: forwards;
+}
+
+.t2
+{
+    top: 85%;
+    animation: t1 2s;
+    animation-delay: .3s;
+    animation-fill-mode: forwards;
+}
+
+.t3
+{
+    top: -5%;
+    animation: t1 2s;
+    animation-delay: .6s;
+    animation-fill-mode: forwards;
+}
+
+.t4
+{
+    top: 85%;
+    animation: t1 2s;
+    animation-delay: .9s;
+    animation-fill-mode: forwards;
+}
+
+.t5
+{
+    top: -5%;
+    animation: t1 2s;
+    animation-delay: 1.2s;
+    animation-fill-mode: forwards;
+}
+
+.whiteBlur
+{
+    width: 100%; height: 100%;
+    background-color: rgba(255, 255, 255, 0.285);
+}
+
+.blackBlur
+{
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+@keyframes t1 
+{
+    to 
+    {
+        top: 35%;
+    }
+}
+
+@keyframes shaking
+{
+    0%
+    {
+        transform: rotate(-10deg);
+    }
+    10%
+    {
+        transform: rotate(10deg);
+    }
+    20%
+    {
+        transform: rotate(-10deg);
+    }
+    30%
+    {
+        transform: rotate(10deg);
+    }
+    40%
+    {
+        transform: rotate(-10deg);
+    }
+    50%
+    {
+        transform: rotate(10deg);
+    }
+    60%
+    {
+        transform: rotate(-10deg);
+    }
+    70%
+    {
+        transform: rotate(10deg);
+    }
+    80%
+    {
+        transform: rotate(-10deg);
+    }
+    90%
+    {
+        transform: rotate(10deg);
+    }
+}
